@@ -1,0 +1,94 @@
+.table-channels-container {
+    width: 60%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(1, 6, 52);
+    background: linear-gradient(360deg, rgba(1, 6, 52, 1) 15%, rgba(4, 4, 45, 0.8939950980392157) 49%, rgba(1, 6, 52, 1) 81%);
+    border: 2px solid rgba(1, 204, 255, 0.103);
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px -25px rgba(204, 206, 207, 0.377);
+
+    .flex-center {
+        width: 90%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .list-channels {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            list-style: none;
+
+            :hover {
+                cursor: pointer;
+            }
+
+            span {
+                font-size: 14px;
+                font-weight: 500;
+                color: rgba(255, 255, 255, 0.664);
+            }
+
+            .main-items {
+                border: 1px solid rgba(255, 255, 255, 0.507);
+                padding: 5px;
+                width: 100%;
+
+                .item {
+                    padding: 5px;
+                    box-shadow: 0px 1px 20px -8px black;
+                }
+            }
+
+            :hover {
+                background-color: rgba(207, 207, 209, 0.171);
+
+                span {
+                    background: none;
+                }
+            }
+        }
+
+        .video-popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.836);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+
+            :hover {
+                cursor: pointer;
+            }
+        }
+
+        .video-popup-content {
+            padding: 20px;
+            width: 1000px;
+            height: 700px;
+            overflow: auto;
+            position: relative;
+
+            :hover {
+                color: rgb(255, 0, 0);
+                cursor: pointer;
+            }
+        }
+
+        .close-button {
+            position: absolute;
+            right: 30px;
+            top: 25px;
+            color: white;
+        }
+    }
+}
