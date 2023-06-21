@@ -1,4 +1,4 @@
-# futgon
+# Futgon
 
 ## Project setup
 ```
