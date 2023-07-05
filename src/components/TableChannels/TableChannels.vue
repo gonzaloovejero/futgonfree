@@ -71,40 +71,40 @@ export default {
             if (item.texto === "TYC SPORTS") {
                 this.urlVideo = "https://tutele1.net/online.php?a=1204";
                 this.mostrarVideo = true;
-            } else if(item.texto === "TYC SPORTS INTERNACIONAL"){
+            } else if (item.texto === "TYC SPORTS INTERNACIONAL") {
                 this.urlVideo = "https://tutele1.net/online.php?a=37718";
                 this.mostrarVideo = true;
-            } else if(item.texto === "ESPN 1"){
+            } else if (item.texto === "ESPN 1") {
                 this.urlVideo = " https://tutele1.net/online.php?a=1 ";
                 this.mostrarVideo = true;
-            } else if(item.texto === "ESPN 2"){
+            } else if (item.texto === "ESPN 2") {
                 this.urlVideo = " https://tutele1.net/online.php?a=2 ";
                 this.mostrarVideo = true;
-            } else if(item.texto === "ESPN 3"){
+            } else if (item.texto === "ESPN 3") {
                 this.urlVideo = " https://tutele1.net/online.php?a=3 ";
                 this.mostrarVideo = true;
-            } else if(item.texto === "ESPN EXTRA"){
+            } else if (item.texto === "ESPN EXTRA") {
                 this.urlVideo = " https://tutele1.net/online.php?a=4674 ";
                 this.mostrarVideo = true;
-            } else if(item.texto === "DIRECTV 1"){
+            } else if (item.texto === "DIRECTV 1") {
                 this.urlVideo = " https://tutele1.net/online.php?a=6 ";
                 this.mostrarVideo = true;
-            } else if(item.texto === "DIRECTV 2"){
+            } else if (item.texto === "DIRECTV 2") {
                 this.urlVideo = " https://tutele1.net/online.php?a=7 ";
                 this.mostrarVideo = true;
-            } else if(item.texto === "DIRECTV PLUS"){
+            } else if (item.texto === "DIRECTV PLUS") {
                 this.urlVideo = " https://tutele1.net/online.php?a=8 ";
                 this.mostrarVideo = true;
-            } else if(item.texto === "TNT SPORTS"){
+            } else if (item.texto === "TNT SPORTS") {
                 this.urlVideo = " https://tutele1.net/online.php?a=149 ";
                 this.mostrarVideo = true;
-            }  else if(item.texto === "FOX SPORTS 1"){
+            } else if (item.texto === "FOX SPORTS 1") {
                 this.urlVideo = " https://tutele1.net/online.php?a=132 ";
                 this.mostrarVideo = true;
-            } else if(item.texto === "FOX SPORTS 2"){
+            } else if (item.texto === "FOX SPORTS 2") {
                 this.urlVideo = " https://tutele1.net/online.php?a=133 ";
                 this.mostrarVideo = true;
-            } else if(item.texto === "FOX SPORTS PLUS"){
+            } else if (item.texto === "FOX SPORTS PLUS") {
                 this.urlVideo = " https://tutele1.net/online.php?a=4673 ";
                 this.mostrarVideo = true;
             }
@@ -126,8 +126,8 @@ export default {
                 <div class="video-popup-content">
                     <button class="close-button" @click="mostrarVideo = false">Cerrar</button>
                     <iframe :src="urlVideo" width="100%" height="600px" frameborder="0" webkitallowfullscreen="true"
-                        mozallowfullscreen="true" msExitFullscreen="true" allowfullscreen="true" allow="encrypted-media"
-                        scrolling="no"></iframe>
+                        mozallowfullscreen="true" msExitFullscreen="true" allowfullscreen="true"
+                        allow="encrypted-media autoplay" scrolling="no"></iframe>
                 </div>
             </div>
         </div>
